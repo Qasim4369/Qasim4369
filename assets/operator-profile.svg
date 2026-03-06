@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340">
+  <defs>
+    <style>
+      @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+      @keyframes scanline { 0% { transform: translateY(-10px); } 100% { transform: translateY(340px); } }
+      .bg { fill: #0D1117; }
+      .border { fill: none; stroke: #00FF41; stroke-width: 2; opacity: 0.8; }
+      .label { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 13px; opacity: 0.5; }
+      .key { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold; }
+      .value { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 14px; }
+      .dim { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 12px; opacity: 0.6; }
+      .quote { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 13px; font-style: italic; opacity: 0.85; }
+      .status-dot { fill: #00FF41; animation: blink 2s ease-in-out infinite; }
+      .header { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .corner { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 9px; opacity: 0.3; }
+      .scan { fill: rgba(0,255,65,0.03); animation: scanline 5s linear infinite; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="340" rx="6"/>
+  <rect class="border" x="15" y="15" width="870" height="310" rx="4"/>
+  <rect class="border" x="18" y="18" width="864" height="304" rx="3" opacity="0.3"/>
+
+  <!-- Scanline -->
+  <rect class="scan" x="15" y="-10" width="870" height="3"/>
+
+  <!-- Header -->
+  <text class="header" x="450" y="50">▌ CLASSIFIED — OPERATOR FILE ▌</text>
+  <line x1="150" y1="60" x2="750" y2="60" stroke="#00FF41" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Fields -->
+  <text class="key" x="60" y="95">OPERATOR:</text>
+  <text class="value" x="260" y="95">Qasim</text>
+  <circle class="status-dot" cx="330" cy="91" r="4"/>
+
+  <text class="key" x="60" y="120">DESIGNATION:</text>
+  <text class="value" x="260" y="120">Data Scientist / AI Engineer / Automation Architect</text>
+
+  <text class="key" x="60" y="145">EXPERIENCE:</text>
+  <text class="value" x="260" y="145">2+ Years — Industry Deployed</text>
+
+  <text class="key" x="60" y="170">INSTITUTION:</text>
+  <text class="value" x="260" y="170">FAST NUCES Islamabad</text>
+
+  <text class="dim" x="260" y="188">National University of Computer &amp; Emerging Sciences</text>
+  <text class="dim" x="260" y="204">↳ The Waterloo of Pakistan 🇵🇰</text>
+
+  <text class="key" x="60" y="230">DEGREE:</text>
+  <text class="value" x="260" y="230">Data Science</text>
+
+  <text class="key" x="60" y="255">SPECIALIZATION:</text>
+  <text class="value" x="260" y="255">Bots • Scrapers • Crawlers • APIs • ML/AI • Automation</text>
+
+  <text class="key" x="60" y="280">STATUS:</text>
+  <text class="value" x="260" y="280">Active. Systems nominal. Bots deployed.</text>
+  <circle class="status-dot" cx="555" cy="276" r="4"/>
+
+  <!-- Bottom quote -->
+  <line x1="150" y1="295" x2="750" y2="295" stroke="#00FF41" stroke-width="0.5" opacity="0.4"/>
+  <text class="quote" x="450" y="315" text-anchor="middle">"In a world drowning in data, I build the machines that make sense of it."</text>
+
+  <!-- Corner decorations -->
+  <text class="corner" x="22" y="30">SEC://ALPHA</text>
+  <text class="corner" x="800" y="30">FILE_0x4369</text>
+  <text class="corner" x="22" y="318">ENCRYPTED</text>
+  <text class="corner" x="810" y="318">VERIFIED ✓</text>
+</svg>
