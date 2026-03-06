@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
   <defs>
     <style>
-      @keyframes hover { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
       @keyframes glow-pulse { 0%,100% { opacity: 0.6; } 50% { opacity: 1; } }
       @keyframes eye-blink { 0%,90%,100% { opacity: 1; } 95% { opacity: 0; } }
       @keyframes scanline { 0% { transform: translateY(-10px); } 100% { transform: translateY(450px); } }
@@ -10,7 +9,20 @@
       .header { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 18px; font-weight: bold; text-anchor: middle; }
       .bot-body { fill: #0D1117; stroke: #00FF41; stroke-width: 1.5; }
       .bot-head { fill: #0D1117; stroke: #00FF41; stroke-width: 1.5; }
-      .bot-eye { fill: #00FF41; animation: eye-blink 4s ease-in-out infinite; }
+      .bot-eye { fill: #00FF41; }
+      .e1 { animation: eye-blink 4s ease-in-out 0s infinite; }
+      .e2 { animation: eye-blink 4s ease-in-out 0.5s infinite; }
+      .e3 { animation: eye-blink 4s ease-in-out 1s infinite; }
+      .e4 { animation: eye-blink 4s ease-in-out 1.5s infinite; }
+      .e5 { animation: eye-blink 4s ease-in-out 2s infinite; }
+      .e6 { animation: eye-blink 4s ease-in-out 0.3s infinite; }
+      .e7 { animation: eye-blink 4s ease-in-out 0.8s infinite; }
+      .e8 { animation: eye-blink 4s ease-in-out 1.3s infinite; }
+      .e9 { animation: eye-blink 4s ease-in-out 1.8s infinite; }
+      .e10 { animation: eye-blink 4s ease-in-out 2.3s infinite; }
+      .e11 { animation: eye-blink 4s ease-in-out 0.6s infinite; }
+      .e12 { animation: eye-blink 4s ease-in-out 1.1s infinite; }
+      .e13 { animation: eye-blink 4s ease-in-out 1.6s infinite; }
       .bot-antenna { stroke: #00FF41; stroke-width: 1.5; fill: none; }
       .bot-antenna-tip { fill: #00FF41; animation: glow-pulse 2s ease-in-out infinite; }
       .bot-label { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 10px; text-anchor: middle; font-weight: bold; }
@@ -22,224 +34,195 @@
       .corner { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 9px; opacity: 0.3; }
       .row-label { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 10px; opacity: 0.4; }
       .scan { fill: rgba(0,255,65,0.03); animation: scanline 5s linear infinite; }
-      .g1 { animation: hover 3s ease-in-out 0s infinite; }
-      .g2 { animation: hover 3s ease-in-out 0.3s infinite; }
-      .g3 { animation: hover 3s ease-in-out 0.6s infinite; }
-      .g4 { animation: hover 3s ease-in-out 0.9s infinite; }
-      .g5 { animation: hover 3s ease-in-out 1.2s infinite; }
     </style>
   </defs>
 
   <rect class="bg" width="900" height="450" rx="6"/>
   <rect class="border" x="15" y="15" width="870" height="420" rx="4"/>
-
   <rect class="scan" x="15" y="-10" width="870" height="3"/>
 
-  <!-- Header -->
   <text class="header" x="450" y="48">⚡ BOT ARMY — FORMATION ALPHA ⚡</text>
-
-  <!-- ROW 1 — 5 bots -->
   <text class="row-label" x="40" y="100">ROW_1:</text>
 
-  <!-- Bot template: head (rect) + eyes (2 circles) + antenna (line+circle) + body (rect) + arms (2 lines) + legs (2 lines) -->
+  <!-- BOT 1 - SCOUT -->
+  <line class="bot-antenna" x1="155" y1="58" x2="155" y2="70"/>
+  <circle class="bot-antenna-tip" cx="155" cy="55" r="3"/>
+  <rect class="bot-head" x="140" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e1" cx="150" cy="81" r="3"/>
+  <circle class="bot-eye e1" cx="160" cy="81" r="3"/>
+  <rect class="bot-body" x="135" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="135" y1="100" x2="122" y2="112"/>
+  <line class="bot-arm" x1="175" y1="100" x2="188" y2="112"/>
+  <line class="bot-leg" x1="145" y1="125" x2="140" y2="140"/>
+  <line class="bot-leg" x1="165" y1="125" x2="170" y2="140"/>
+  <text class="bot-label" x="155" y="155">SCOUT</text>
 
-  <!-- Bot 1 - SCOUT -->
-  <g class="g1" transform="translate(130, 70)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 0s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 0s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">SCOUT</text>
-  </g>
+  <!-- BOT 2 - SCRAPER -->
+  <line class="bot-antenna" x1="295" y1="58" x2="295" y2="70"/>
+  <circle class="bot-antenna-tip" cx="295" cy="55" r="3"/>
+  <rect class="bot-head" x="280" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e2" cx="290" cy="81" r="3"/>
+  <circle class="bot-eye e2" cx="300" cy="81" r="3"/>
+  <rect class="bot-body" x="275" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="275" y1="100" x2="262" y2="112"/>
+  <line class="bot-arm" x1="315" y1="100" x2="328" y2="112"/>
+  <line class="bot-leg" x1="285" y1="125" x2="280" y2="140"/>
+  <line class="bot-leg" x1="305" y1="125" x2="310" y2="140"/>
+  <text class="bot-label" x="295" y="155">SCRAPER</text>
 
-  <!-- Bot 2 - SCRAPER -->
-  <g class="g2" transform="translate(270, 70)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 0.5s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 0.5s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">SCRAPER</text>
-  </g>
+  <!-- BOT 3 - TRAINER -->
+  <line class="bot-antenna" x1="455" y1="58" x2="455" y2="70"/>
+  <circle class="bot-antenna-tip" cx="455" cy="55" r="3"/>
+  <rect class="bot-head" x="440" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e3" cx="450" cy="81" r="3"/>
+  <circle class="bot-eye e3" cx="460" cy="81" r="3"/>
+  <rect class="bot-body" x="435" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="435" y1="100" x2="422" y2="112"/>
+  <line class="bot-arm" x1="475" y1="100" x2="488" y2="112"/>
+  <line class="bot-leg" x1="445" y1="125" x2="440" y2="140"/>
+  <line class="bot-leg" x1="465" y1="125" x2="470" y2="140"/>
+  <text class="bot-label" x="455" y="155">TRAINER</text>
 
-  <!-- Bot 3 - TRAINER -->
-  <g class="g3" transform="translate(410, 70)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 1s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 1s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">TRAINER</text>
-  </g>
+  <!-- BOT 4 - DEPLOYER -->
+  <line class="bot-antenna" x1="615" y1="58" x2="615" y2="70"/>
+  <circle class="bot-antenna-tip" cx="615" cy="55" r="3"/>
+  <rect class="bot-head" x="600" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e4" cx="610" cy="81" r="3"/>
+  <circle class="bot-eye e4" cx="620" cy="81" r="3"/>
+  <rect class="bot-body" x="595" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="595" y1="100" x2="582" y2="112"/>
+  <line class="bot-arm" x1="635" y1="100" x2="648" y2="112"/>
+  <line class="bot-leg" x1="605" y1="125" x2="600" y2="140"/>
+  <line class="bot-leg" x1="625" y1="125" x2="630" y2="140"/>
+  <text class="bot-label" x="615" y="155">DEPLOYER</text>
 
-  <!-- Bot 4 - DEPLOYER -->
-  <g class="g4" transform="translate(550, 70)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 1.5s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 1.5s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">DEPLOYER</text>
-  </g>
+  <!-- BOT 5 - SENTINEL -->
+  <line class="bot-antenna" x1="765" y1="58" x2="765" y2="70"/>
+  <circle class="bot-antenna-tip" cx="765" cy="55" r="3"/>
+  <rect class="bot-head" x="750" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e5" cx="760" cy="81" r="3"/>
+  <circle class="bot-eye e5" cx="770" cy="81" r="3"/>
+  <rect class="bot-body" x="745" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="745" y1="100" x2="732" y2="112"/>
+  <line class="bot-arm" x1="785" y1="100" x2="798" y2="112"/>
+  <line class="bot-leg" x1="755" y1="125" x2="750" y2="140"/>
+  <line class="bot-leg" x1="775" y1="125" x2="780" y2="140"/>
+  <text class="bot-label" x="765" y="155">SENTINEL</text>
 
-  <!-- Bot 5 - SENTINEL -->
-  <g class="g5" transform="translate(690, 70)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 2s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 2s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">SENTINEL</text>
-  </g>
-
-  <!-- ROW 2 — 5 bots -->
+  <!-- ROW 2 -->
   <text class="row-label" x="40" y="215">ROW_2:</text>
 
-  <g class="g3" transform="translate(130, 185)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 0.2s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 0.2s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">CRAWLER</text>
-  </g>
+  <!-- BOT 6 - CRAWLER -->
+  <line class="bot-antenna" x1="155" y1="173" x2="155" y2="185"/>
+  <circle class="bot-antenna-tip" cx="155" cy="170" r="3"/>
+  <rect class="bot-head" x="140" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e6" cx="150" cy="196" r="3"/>
+  <circle class="bot-eye e6" cx="160" cy="196" r="3"/>
+  <rect class="bot-body" x="135" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="135" y1="215" x2="122" y2="227"/>
+  <line class="bot-arm" x1="175" y1="215" x2="188" y2="227"/>
+  <line class="bot-leg" x1="145" y1="240" x2="140" y2="255"/>
+  <line class="bot-leg" x1="165" y1="240" x2="170" y2="255"/>
+  <text class="bot-label" x="155" y="270">CRAWLER</text>
 
-  <g class="g5" transform="translate(270, 185)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 0.7s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 0.7s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">PARSER</text>
-  </g>
+  <!-- BOT 7 - PARSER -->
+  <line class="bot-antenna" x1="295" y1="173" x2="295" y2="185"/>
+  <circle class="bot-antenna-tip" cx="295" cy="170" r="3"/>
+  <rect class="bot-head" x="280" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e7" cx="290" cy="196" r="3"/>
+  <circle class="bot-eye e7" cx="300" cy="196" r="3"/>
+  <rect class="bot-body" x="275" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="275" y1="215" x2="262" y2="227"/>
+  <line class="bot-arm" x1="315" y1="215" x2="328" y2="227"/>
+  <line class="bot-leg" x1="285" y1="240" x2="280" y2="255"/>
+  <line class="bot-leg" x1="305" y1="240" x2="310" y2="255"/>
+  <text class="bot-label" x="295" y="270">PARSER</text>
 
-  <g class="g1" transform="translate(410, 185)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 1.2s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 1.2s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">FEEDER</text>
-  </g>
+  <!-- BOT 8 - FEEDER -->
+  <line class="bot-antenna" x1="455" y1="173" x2="455" y2="185"/>
+  <circle class="bot-antenna-tip" cx="455" cy="170" r="3"/>
+  <rect class="bot-head" x="440" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e8" cx="450" cy="196" r="3"/>
+  <circle class="bot-eye e8" cx="460" cy="196" r="3"/>
+  <rect class="bot-body" x="435" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="435" y1="215" x2="422" y2="227"/>
+  <line class="bot-arm" x1="475" y1="215" x2="488" y2="227"/>
+  <line class="bot-leg" x1="445" y1="240" x2="440" y2="255"/>
+  <line class="bot-leg" x1="465" y1="240" x2="470" y2="255"/>
+  <text class="bot-label" x="455" y="270">FEEDER</text>
 
-  <g class="g4" transform="translate(550, 185)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 1.7s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 1.7s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">SYNCER</text>
-  </g>
+  <!-- BOT 9 - SYNCER -->
+  <line class="bot-antenna" x1="615" y1="173" x2="615" y2="185"/>
+  <circle class="bot-antenna-tip" cx="615" cy="170" r="3"/>
+  <rect class="bot-head" x="600" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e9" cx="610" cy="196" r="3"/>
+  <circle class="bot-eye e9" cx="620" cy="196" r="3"/>
+  <rect class="bot-body" x="595" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="595" y1="215" x2="582" y2="227"/>
+  <line class="bot-arm" x1="635" y1="215" x2="648" y2="227"/>
+  <line class="bot-leg" x1="605" y1="240" x2="600" y2="255"/>
+  <line class="bot-leg" x1="625" y1="240" x2="630" y2="255"/>
+  <text class="bot-label" x="615" y="270">SYNCER</text>
 
-  <g class="g2" transform="translate(690, 185)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 2.2s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 2.2s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">WATCHER</text>
-  </g>
+  <!-- BOT 10 - WATCHER -->
+  <line class="bot-antenna" x1="765" y1="173" x2="765" y2="185"/>
+  <circle class="bot-antenna-tip" cx="765" cy="170" r="3"/>
+  <rect class="bot-head" x="750" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e10" cx="760" cy="196" r="3"/>
+  <circle class="bot-eye e10" cx="770" cy="196" r="3"/>
+  <rect class="bot-body" x="745" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="745" y1="215" x2="732" y2="227"/>
+  <line class="bot-arm" x1="785" y1="215" x2="798" y2="227"/>
+  <line class="bot-leg" x1="755" y1="240" x2="750" y2="255"/>
+  <line class="bot-leg" x1="775" y1="240" x2="780" y2="255"/>
+  <text class="bot-label" x="765" y="270">WATCHER</text>
 
-  <!-- ROW 3 — 3 center bots -->
+  <!-- ROW 3 -->
   <text class="row-label" x="40" y="330">ROW_3:</text>
 
-  <g class="g2" transform="translate(310, 300)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 0.4s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 0.4s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">API</text>
-  </g>
+  <!-- BOT 11 - API -->
+  <line class="bot-antenna" x1="335" y1="288" x2="335" y2="300"/>
+  <circle class="bot-antenna-tip" cx="335" cy="285" r="3"/>
+  <rect class="bot-head" x="320" y="300" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e11" cx="330" cy="311" r="3"/>
+  <circle class="bot-eye e11" cx="340" cy="311" r="3"/>
+  <rect class="bot-body" x="315" y="325" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="315" y1="330" x2="302" y2="342"/>
+  <line class="bot-arm" x1="355" y1="330" x2="368" y2="342"/>
+  <line class="bot-leg" x1="325" y1="355" x2="320" y2="370"/>
+  <line class="bot-leg" x1="345" y1="355" x2="350" y2="370"/>
+  <text class="bot-label" x="335" y="385">API</text>
 
-  <g class="g4" transform="translate(420, 300)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 0.9s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 0.9s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">ETL</text>
-  </g>
+  <!-- BOT 12 - ETL -->
+  <line class="bot-antenna" x1="465" y1="288" x2="465" y2="300"/>
+  <circle class="bot-antenna-tip" cx="465" cy="285" r="3"/>
+  <rect class="bot-head" x="450" y="300" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e12" cx="460" cy="311" r="3"/>
+  <circle class="bot-eye e12" cx="470" cy="311" r="3"/>
+  <rect class="bot-body" x="445" y="325" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="445" y1="330" x2="432" y2="342"/>
+  <line class="bot-arm" x1="485" y1="330" x2="498" y2="342"/>
+  <line class="bot-leg" x1="455" y1="355" x2="450" y2="370"/>
+  <line class="bot-leg" x1="475" y1="355" x2="480" y2="370"/>
+  <text class="bot-label" x="465" y="385">ETL</text>
 
-  <g class="g1" transform="translate(530, 300)">
-    <line class="bot-antenna" x1="25" y1="0" x2="25" y2="-12"/>
-    <circle class="bot-antenna-tip" cx="25" cy="-15" r="3"/>
-    <rect class="bot-head" x="10" y="0" width="30" height="22" rx="4"/>
-    <circle class="bot-eye" cx="20" cy="11" r="3" style="animation-delay: 1.4s;"/>
-    <circle class="bot-eye" cx="30" cy="11" r="3" style="animation-delay: 1.4s;"/>
-    <rect class="bot-body" x="5" y="25" width="40" height="30" rx="3"/>
-    <line class="bot-arm" x1="5" y1="30" x2="-8" y2="42"/>
-    <line class="bot-arm" x1="45" y1="30" x2="58" y2="42"/>
-    <line class="bot-leg" x1="15" y1="55" x2="10" y2="70"/>
-    <line class="bot-leg" x1="35" y1="55" x2="40" y2="70"/>
-    <text class="bot-label" x="25" y="85">GUARD</text>
-  </g>
+  <!-- BOT 13 - GUARD -->
+  <line class="bot-antenna" x1="595" y1="288" x2="595" y2="300"/>
+  <circle class="bot-antenna-tip" cx="595" cy="285" r="3"/>
+  <rect class="bot-head" x="580" y="300" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e13" cx="590" cy="311" r="3"/>
+  <circle class="bot-eye e13" cx="600" cy="311" r="3"/>
+  <rect class="bot-body" x="575" y="325" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="575" y1="330" x2="562" y2="342"/>
+  <line class="bot-arm" x1="615" y1="330" x2="628" y2="342"/>
+  <line class="bot-leg" x1="585" y1="355" x2="580" y2="370"/>
+  <line class="bot-leg" x1="605" y1="355" x2="610" y2="370"/>
+  <text class="bot-label" x="595" y="385">GUARD</text>
 
   <!-- Footer -->
   <line class="footer-line" x1="100" y1="405" x2="800" y2="405"/>
-  <text class="footer-label" x="300" y="425">👤 OPERATOR: QASIM</text>
-  <text class="footer-text" x="570" y="425">📡 MISSION: Zero manual intervention.</text>
+  <text class="footer-label" x="300" y="430">👤 OPERATOR: QASIM</text>
+  <text class="footer-text" x="600" y="430">📡 MISSION: Zero manual intervention.</text>
 
   <text class="corner" x="22" y="30">FORM://ALPHA</text>
   <text class="corner" x="800" y="30">UNITS: 13</text>
