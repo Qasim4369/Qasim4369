@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280">
+  <defs>
+    <style>
+      @keyframes arrow-pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
+      @keyframes scanline { 0% { transform: translateY(-10px); } 100% { transform: translateY(280px); } }
+      .bg { fill: #0D1117; }
+      .border { fill: none; stroke: #00FF41; stroke-width: 2; opacity: 0.8; }
+      .box { fill: #0D1117; stroke-width: 1.5; rx: 4; }
+      .box-old { stroke: #FF0040; }
+      .box-new { stroke: #00FF41; }
+      .box-center { stroke: #00C9FF; }
+      .title { font-family: 'Courier New', monospace; font-size: 13px; font-weight: bold; text-anchor: middle; }
+      .title-old { fill: #FF0040; }
+      .title-new { fill: #00FF41; }
+      .title-center { fill: #00C9FF; }
+      .item { font-family: 'Courier New', monospace; font-size: 11px; fill: #888888; }
+      .item-new { font-family: 'Courier New', monospace; font-size: 11px; fill: #00C9FF; }
+      .arrow { fill: #00FF41; animation: arrow-pulse 1.5s ease-in-out infinite; }
+      .header { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .bottom-text { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 13px; text-anchor: middle; font-style: italic; }
+      .corner { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 9px; opacity: 0.3; }
+      .cross { fill: #FF0040; font-family: 'Courier New', monospace; font-size: 12px; }
+      .check { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 12px; }
+      .scan { fill: rgba(0,255,65,0.03); animation: scanline 5s linear infinite; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="280" rx="6"/>
+  <rect class="border" x="15" y="15" width="870" height="250" rx="4"/>
+  <rect class="scan" x="15" y="-10" width="870" height="3"/>
+
+  <!-- Header -->
+  <text class="header" x="450" y="45">⚙️ TRANSFORMATION PROTOCOL</text>
+
+  <!-- OLD WAY box -->
+  <rect class="box box-old" x="50" y="65" width="230" height="165"/>
+  <text class="title title-old" x="165" y="88">🏚️ THE OLD WAY</text>
+  <text class="cross" x="70" y="115">✗</text><text class="item" x="90" y="115">Manual data entry</text>
+  <text class="cross" x="70" y="138">✗</text><text class="item" x="90" y="138">Copy-paste workflows</text>
+  <text class="cross" x="70" y="161">✗</text><text class="item" x="90" y="161">Gut-feel decisions</text>
+  <text class="cross" x="70" y="184">✗</text><text class="item" x="90" y="184">Disconnected tools</text>
+  <text class="cross" x="70" y="207">✗</text><text class="item" x="90" y="207">Pray it works</text>
+
+  <!-- Arrow 1 -->
+  <polygon class="arrow" points="300,147 330,135 330,142 360,142 360,152 330,152 330,159" style="animation-delay: 0s;"/>
+
+  <!-- CENTER box -->
+  <rect class="box box-center" x="370" y="100" width="160" height="95"/>
+  <text class="title title-center" x="450" y="130">⚡ QASIM.exe</text>
+  <text class="item-new" x="395" y="155" font-size="10">APIs • Bots • ML</text>
+  <text class="item-new" x="395" y="175" font-size="10">Pipelines • Agents</text>
+
+  <!-- Arrow 2 -->
+  <polygon class="arrow" points="550,147 580,135 580,142 610,142 610,152 580,152 580,159" style="animation-delay: 0.5s;"/>
+
+  <!-- NEW WAY box -->
+  <rect class="box box-new" x="620" y="65" width="230" height="165"/>
+  <text class="title title-new" x="735" y="88">🏙️ THE NEW WAY</text>
+  <text class="check" x="640" y="115">✓</text><text class="item-new" x="660" y="115">Bot armies handle it</text>
+  <text class="check" x="640" y="138">✓</text><text class="item-new" x="660" y="138">Smart APIs sync all</text>
+  <text class="check" x="640" y="161">✓</text><text class="item-new" x="660" y="161">ML models decide</text>
+  <text class="check" x="640" y="184">✓</text><text class="item-new" x="660" y="184">Integrated ecosystem</text>
+  <text class="check" x="640" y="207">✓</text><text class="item-new" x="660" y="207">It just works</text>
+
+  <!-- Bottom quote -->
+  <text class="bottom-text" x="450" y="255">💡 "I don't just build AI. I rewire how businesses operate."</text>
+
+  <text class="corner" x="22" y="30">PROTO://v4.3</text>
+  <text class="corner" x="800" y="30">MODE: TAKEOVER</text>
+</svg>
