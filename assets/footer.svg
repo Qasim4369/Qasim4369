@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="140" viewBox="0 0 900 140">
+  <defs>
+    <style>
+      @keyframes flicker { 0%,100% { opacity: 1; } 50% { opacity: 0.7; } }
+      .bg { fill: #0D1117; }
+      .border { fill: none; stroke: #00FF41; stroke-width: 2; opacity: 0.6; }
+      .quote { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 15px; text-anchor: middle; font-style: italic; }
+      .sub { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 13px; text-anchor: middle; opacity: 0.7; }
+      .blink { animation: flicker 3s ease-in-out infinite; }
+      .term { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 12px; text-anchor: middle; opacity: 0.5; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="140" rx="6"/>
+  <rect class="border" x="100" y="15" width="700" height="110" rx="4"/>
+
+  <text class="quote" x="450" y="50">"I don't replace people. I replace the work they hate."</text>
+  <text class="sub" x="450" y="78">While you were doing it manually, my bots already finished.</text>
+
+  <text class="term blink" x="450" y="110">> SESSION TERMINATED. BOTS STILL RUNNING. GOODNIGHT, OPERATOR.</text>
+</svg>
