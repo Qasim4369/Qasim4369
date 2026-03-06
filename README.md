@@ -6,7 +6,7 @@
 <br/>
 
 <!-- TYPEWRITER BOOT SEQUENCE -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2000&pause=500&color=00FF41&center=true&vCenter=true&multiline=true&repeat=false&width=750&height=120&lines=%3E+SYSTEM+BREACH+DETECTED...;%3E+ACCESSING+OPERATOR+FILE...;%3E+DECRYPTING+CREDENTIALS...;%3E+WELCOME+BACK%2C+QASIM." alt="Boot Sequence" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2000&pause=500&color=00FF41&center=true&vCenter=true&multiline=true&repeat=false&width=750&height=120&lines=%3E+SYSTEM+BREACH+DETECTED...;%3E+ACCESSING+OPERATOR+FILE...;%3E+DECRYPTING+CREDENTIALS...." alt="Boot Sequence" />
 
 <br/>
 
