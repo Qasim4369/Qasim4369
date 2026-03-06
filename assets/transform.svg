@@ -1,70 +1,229 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
   <defs>
     <style>
-      @keyframes arrow-pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
-      @keyframes scanline { 0% { transform: translateY(-10px); } 100% { transform: translateY(280px); } }
+      @keyframes glow-pulse { 0%,100% { opacity: 0.6; } 50% { opacity: 1; } }
+      @keyframes eye-blink { 0%,90%,100% { opacity: 1; } 95% { opacity: 0; } }
+      @keyframes scanline { 0% { transform: translateY(-10px); } 100% { transform: translateY(450px); } }
       .bg { fill: #0D1117; }
       .border { fill: none; stroke: #00FF41; stroke-width: 2; opacity: 0.8; }
-      .box { fill: #0D1117; stroke-width: 1.5; rx: 4; }
-      .box-old { stroke: #FF0040; }
-      .box-new { stroke: #00FF41; }
-      .box-center { stroke: #00C9FF; }
-      .title { font-family: 'Courier New', monospace; font-size: 13px; font-weight: bold; text-anchor: middle; }
-      .title-old { fill: #FF0040; }
-      .title-new { fill: #00FF41; }
-      .title-center { fill: #00C9FF; }
-      .item { font-family: 'Courier New', monospace; font-size: 11px; fill: #888888; }
-      .item-new { font-family: 'Courier New', monospace; font-size: 11px; fill: #00C9FF; }
-      .arrow { fill: #00FF41; animation: arrow-pulse 1.5s ease-in-out infinite; }
-      .header { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 16px; font-weight: bold; text-anchor: middle; }
-      .bottom-text { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 13px; text-anchor: middle; font-style: italic; }
+      .header { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .bot-body { fill: #0D1117; stroke: #00FF41; stroke-width: 1.5; }
+      .bot-head { fill: #0D1117; stroke: #00FF41; stroke-width: 1.5; }
+      .bot-eye { fill: #00FF41; }
+      .e1 { animation: eye-blink 4s ease-in-out 0s infinite; }
+      .e2 { animation: eye-blink 4s ease-in-out 0.5s infinite; }
+      .e3 { animation: eye-blink 4s ease-in-out 1s infinite; }
+      .e4 { animation: eye-blink 4s ease-in-out 1.5s infinite; }
+      .e5 { animation: eye-blink 4s ease-in-out 2s infinite; }
+      .e6 { animation: eye-blink 4s ease-in-out 0.3s infinite; }
+      .e7 { animation: eye-blink 4s ease-in-out 0.8s infinite; }
+      .e8 { animation: eye-blink 4s ease-in-out 1.3s infinite; }
+      .e9 { animation: eye-blink 4s ease-in-out 1.8s infinite; }
+      .e10 { animation: eye-blink 4s ease-in-out 2.3s infinite; }
+      .e11 { animation: eye-blink 4s ease-in-out 0.6s infinite; }
+      .e12 { animation: eye-blink 4s ease-in-out 1.1s infinite; }
+      .e13 { animation: eye-blink 4s ease-in-out 1.6s infinite; }
+      .bot-antenna { stroke: #00FF41; stroke-width: 1.5; fill: none; }
+      .bot-antenna-tip { fill: #00FF41; animation: glow-pulse 2s ease-in-out infinite; }
+      .bot-label { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 10px; text-anchor: middle; font-weight: bold; }
+      .bot-leg { stroke: #00FF41; stroke-width: 1.5; }
+      .bot-arm { stroke: #00FF41; stroke-width: 1.5; }
+      .footer-line { stroke: #00FF41; stroke-width: 1; opacity: 0.6; }
+      .footer-text { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 13px; text-anchor: middle; }
+      .footer-label { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 13px; text-anchor: middle; font-weight: bold; }
       .corner { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 9px; opacity: 0.3; }
-      .cross { fill: #FF0040; font-family: 'Courier New', monospace; font-size: 12px; }
-      .check { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 12px; }
+      .row-label { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 10px; opacity: 0.4; }
       .scan { fill: rgba(0,255,65,0.03); animation: scanline 5s linear infinite; }
     </style>
   </defs>
 
-  <rect class="bg" width="900" height="280" rx="6"/>
-  <rect class="border" x="15" y="15" width="870" height="250" rx="4"/>
+  <rect class="bg" width="900" height="450" rx="6"/>
+  <rect class="border" x="15" y="15" width="870" height="420" rx="4"/>
   <rect class="scan" x="15" y="-10" width="870" height="3"/>
 
-  <!-- Header -->
-  <text class="header" x="450" y="45">⚙️ TRANSFORMATION PROTOCOL</text>
+  <text class="header" x="450" y="48">⚡ BOT ARMY — FORMATION ALPHA ⚡</text>
+  <text class="row-label" x="40" y="100">ROW_1:</text>
 
-  <!-- OLD WAY box -->
-  <rect class="box box-old" x="50" y="65" width="230" height="165"/>
-  <text class="title title-old" x="165" y="88">🏚️ THE OLD WAY</text>
-  <text class="cross" x="70" y="115">✗</text><text class="item" x="90" y="115">Manual data entry</text>
-  <text class="cross" x="70" y="138">✗</text><text class="item" x="90" y="138">Copy-paste workflows</text>
-  <text class="cross" x="70" y="161">✗</text><text class="item" x="90" y="161">Gut-feel decisions</text>
-  <text class="cross" x="70" y="184">✗</text><text class="item" x="90" y="184">Disconnected tools</text>
-  <text class="cross" x="70" y="207">✗</text><text class="item" x="90" y="207">Pray it works</text>
+  <!-- BOT 1 - SCOUT -->
+  <line class="bot-antenna" x1="155" y1="58" x2="155" y2="70"/>
+  <circle class="bot-antenna-tip" cx="155" cy="55" r="3"/>
+  <rect class="bot-head" x="140" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e1" cx="150" cy="81" r="3"/>
+  <circle class="bot-eye e1" cx="160" cy="81" r="3"/>
+  <rect class="bot-body" x="135" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="135" y1="100" x2="122" y2="112"/>
+  <line class="bot-arm" x1="175" y1="100" x2="188" y2="112"/>
+  <line class="bot-leg" x1="145" y1="125" x2="140" y2="140"/>
+  <line class="bot-leg" x1="165" y1="125" x2="170" y2="140"/>
+  <text class="bot-label" x="155" y="155">SCOUT</text>
 
-  <!-- Arrow 1 -->
-  <polygon class="arrow" points="300,147 330,135 330,142 360,142 360,152 330,152 330,159" style="animation-delay: 0s;"/>
+  <!-- BOT 2 - SCRAPER -->
+  <line class="bot-antenna" x1="295" y1="58" x2="295" y2="70"/>
+  <circle class="bot-antenna-tip" cx="295" cy="55" r="3"/>
+  <rect class="bot-head" x="280" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e2" cx="290" cy="81" r="3"/>
+  <circle class="bot-eye e2" cx="300" cy="81" r="3"/>
+  <rect class="bot-body" x="275" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="275" y1="100" x2="262" y2="112"/>
+  <line class="bot-arm" x1="315" y1="100" x2="328" y2="112"/>
+  <line class="bot-leg" x1="285" y1="125" x2="280" y2="140"/>
+  <line class="bot-leg" x1="305" y1="125" x2="310" y2="140"/>
+  <text class="bot-label" x="295" y="155">SCRAPER</text>
 
-  <!-- CENTER box -->
-  <rect class="box box-center" x="370" y="100" width="160" height="95"/>
-  <text class="title title-center" x="450" y="130">⚡ QASIM.exe</text>
-  <text class="item-new" x="395" y="155" font-size="10">APIs • Bots • ML</text>
-  <text class="item-new" x="395" y="175" font-size="10">Pipelines • Agents</text>
+  <!-- BOT 3 - TRAINER -->
+  <line class="bot-antenna" x1="455" y1="58" x2="455" y2="70"/>
+  <circle class="bot-antenna-tip" cx="455" cy="55" r="3"/>
+  <rect class="bot-head" x="440" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e3" cx="450" cy="81" r="3"/>
+  <circle class="bot-eye e3" cx="460" cy="81" r="3"/>
+  <rect class="bot-body" x="435" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="435" y1="100" x2="422" y2="112"/>
+  <line class="bot-arm" x1="475" y1="100" x2="488" y2="112"/>
+  <line class="bot-leg" x1="445" y1="125" x2="440" y2="140"/>
+  <line class="bot-leg" x1="465" y1="125" x2="470" y2="140"/>
+  <text class="bot-label" x="455" y="155">TRAINER</text>
 
-  <!-- Arrow 2 -->
-  <polygon class="arrow" points="550,147 580,135 580,142 610,142 610,152 580,152 580,159" style="animation-delay: 0.5s;"/>
+  <!-- BOT 4 - DEPLOYER -->
+  <line class="bot-antenna" x1="615" y1="58" x2="615" y2="70"/>
+  <circle class="bot-antenna-tip" cx="615" cy="55" r="3"/>
+  <rect class="bot-head" x="600" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e4" cx="610" cy="81" r="3"/>
+  <circle class="bot-eye e4" cx="620" cy="81" r="3"/>
+  <rect class="bot-body" x="595" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="595" y1="100" x2="582" y2="112"/>
+  <line class="bot-arm" x1="635" y1="100" x2="648" y2="112"/>
+  <line class="bot-leg" x1="605" y1="125" x2="600" y2="140"/>
+  <line class="bot-leg" x1="625" y1="125" x2="630" y2="140"/>
+  <text class="bot-label" x="615" y="155">DEPLOYER</text>
 
-  <!-- NEW WAY box -->
-  <rect class="box box-new" x="620" y="65" width="230" height="165"/>
-  <text class="title title-new" x="735" y="88">🏙️ THE NEW WAY</text>
-  <text class="check" x="640" y="115">✓</text><text class="item-new" x="660" y="115">Bot armies handle it</text>
-  <text class="check" x="640" y="138">✓</text><text class="item-new" x="660" y="138">Smart APIs sync all</text>
-  <text class="check" x="640" y="161">✓</text><text class="item-new" x="660" y="161">ML models decide</text>
-  <text class="check" x="640" y="184">✓</text><text class="item-new" x="660" y="184">Integrated ecosystem</text>
-  <text class="check" x="640" y="207">✓</text><text class="item-new" x="660" y="207">It just works</text>
+  <!-- BOT 5 - SENTINEL -->
+  <line class="bot-antenna" x1="765" y1="58" x2="765" y2="70"/>
+  <circle class="bot-antenna-tip" cx="765" cy="55" r="3"/>
+  <rect class="bot-head" x="750" y="70" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e5" cx="760" cy="81" r="3"/>
+  <circle class="bot-eye e5" cx="770" cy="81" r="3"/>
+  <rect class="bot-body" x="745" y="95" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="745" y1="100" x2="732" y2="112"/>
+  <line class="bot-arm" x1="785" y1="100" x2="798" y2="112"/>
+  <line class="bot-leg" x1="755" y1="125" x2="750" y2="140"/>
+  <line class="bot-leg" x1="775" y1="125" x2="780" y2="140"/>
+  <text class="bot-label" x="765" y="155">SENTINEL</text>
 
-  <!-- Bottom quote -->
-  <text class="bottom-text" x="450" y="255">💡 "I don't just build AI. I rewire how businesses operate."</text>
+  <!-- ROW 2 -->
+  <text class="row-label" x="40" y="215">ROW_2:</text>
 
-  <text class="corner" x="22" y="30">PROTO://v4.3</text>
-  <text class="corner" x="800" y="30">MODE: TAKEOVER</text>
+  <!-- BOT 6 - CRAWLER -->
+  <line class="bot-antenna" x1="155" y1="173" x2="155" y2="185"/>
+  <circle class="bot-antenna-tip" cx="155" cy="170" r="3"/>
+  <rect class="bot-head" x="140" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e6" cx="150" cy="196" r="3"/>
+  <circle class="bot-eye e6" cx="160" cy="196" r="3"/>
+  <rect class="bot-body" x="135" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="135" y1="215" x2="122" y2="227"/>
+  <line class="bot-arm" x1="175" y1="215" x2="188" y2="227"/>
+  <line class="bot-leg" x1="145" y1="240" x2="140" y2="255"/>
+  <line class="bot-leg" x1="165" y1="240" x2="170" y2="255"/>
+  <text class="bot-label" x="155" y="270">CRAWLER</text>
+
+  <!-- BOT 7 - PARSER -->
+  <line class="bot-antenna" x1="295" y1="173" x2="295" y2="185"/>
+  <circle class="bot-antenna-tip" cx="295" cy="170" r="3"/>
+  <rect class="bot-head" x="280" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e7" cx="290" cy="196" r="3"/>
+  <circle class="bot-eye e7" cx="300" cy="196" r="3"/>
+  <rect class="bot-body" x="275" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="275" y1="215" x2="262" y2="227"/>
+  <line class="bot-arm" x1="315" y1="215" x2="328" y2="227"/>
+  <line class="bot-leg" x1="285" y1="240" x2="280" y2="255"/>
+  <line class="bot-leg" x1="305" y1="240" x2="310" y2="255"/>
+  <text class="bot-label" x="295" y="270">PARSER</text>
+
+  <!-- BOT 8 - FEEDER -->
+  <line class="bot-antenna" x1="455" y1="173" x2="455" y2="185"/>
+  <circle class="bot-antenna-tip" cx="455" cy="170" r="3"/>
+  <rect class="bot-head" x="440" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e8" cx="450" cy="196" r="3"/>
+  <circle class="bot-eye e8" cx="460" cy="196" r="3"/>
+  <rect class="bot-body" x="435" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="435" y1="215" x2="422" y2="227"/>
+  <line class="bot-arm" x1="475" y1="215" x2="488" y2="227"/>
+  <line class="bot-leg" x1="445" y1="240" x2="440" y2="255"/>
+  <line class="bot-leg" x1="465" y1="240" x2="470" y2="255"/>
+  <text class="bot-label" x="455" y="270">FEEDER</text>
+
+  <!-- BOT 9 - SYNCER -->
+  <line class="bot-antenna" x1="615" y1="173" x2="615" y2="185"/>
+  <circle class="bot-antenna-tip" cx="615" cy="170" r="3"/>
+  <rect class="bot-head" x="600" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e9" cx="610" cy="196" r="3"/>
+  <circle class="bot-eye e9" cx="620" cy="196" r="3"/>
+  <rect class="bot-body" x="595" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="595" y1="215" x2="582" y2="227"/>
+  <line class="bot-arm" x1="635" y1="215" x2="648" y2="227"/>
+  <line class="bot-leg" x1="605" y1="240" x2="600" y2="255"/>
+  <line class="bot-leg" x1="625" y1="240" x2="630" y2="255"/>
+  <text class="bot-label" x="615" y="270">SYNCER</text>
+
+  <!-- BOT 10 - WATCHER -->
+  <line class="bot-antenna" x1="765" y1="173" x2="765" y2="185"/>
+  <circle class="bot-antenna-tip" cx="765" cy="170" r="3"/>
+  <rect class="bot-head" x="750" y="185" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e10" cx="760" cy="196" r="3"/>
+  <circle class="bot-eye e10" cx="770" cy="196" r="3"/>
+  <rect class="bot-body" x="745" y="210" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="745" y1="215" x2="732" y2="227"/>
+  <line class="bot-arm" x1="785" y1="215" x2="798" y2="227"/>
+  <line class="bot-leg" x1="755" y1="240" x2="750" y2="255"/>
+  <line class="bot-leg" x1="775" y1="240" x2="780" y2="255"/>
+  <text class="bot-label" x="765" y="270">WATCHER</text>
+
+  <!-- ROW 3 -->
+  <text class="row-label" x="40" y="330">ROW_3:</text>
+
+  <!-- BOT 11 - API -->
+  <line class="bot-antenna" x1="335" y1="288" x2="335" y2="300"/>
+  <circle class="bot-antenna-tip" cx="335" cy="285" r="3"/>
+  <rect class="bot-head" x="320" y="300" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e11" cx="330" cy="311" r="3"/>
+  <circle class="bot-eye e11" cx="340" cy="311" r="3"/>
+  <rect class="bot-body" x="315" y="325" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="315" y1="330" x2="302" y2="342"/>
+  <line class="bot-arm" x1="355" y1="330" x2="368" y2="342"/>
+  <line class="bot-leg" x1="325" y1="355" x2="320" y2="370"/>
+  <line class="bot-leg" x1="345" y1="355" x2="350" y2="370"/>
+  <text class="bot-label" x="335" y="385">API</text>
+
+  <!-- BOT 12 - ETL -->
+  <line class="bot-antenna" x1="465" y1="288" x2="465" y2="300"/>
+  <circle class="bot-antenna-tip" cx="465" cy="285" r="3"/>
+  <rect class="bot-head" x="450" y="300" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e12" cx="460" cy="311" r="3"/>
+  <circle class="bot-eye e12" cx="470" cy="311" r="3"/>
+  <rect class="bot-body" x="445" y="325" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="445" y1="330" x2="432" y2="342"/>
+  <line class="bot-arm" x1="485" y1="330" x2="498" y2="342"/>
+  <line class="bot-leg" x1="455" y1="355" x2="450" y2="370"/>
+  <line class="bot-leg" x1="475" y1="355" x2="480" y2="370"/>
+  <text class="bot-label" x="465" y="385">ETL</text>
+
+  <!-- BOT 13 - GUARD -->
+  <line class="bot-antenna" x1="595" y1="288" x2="595" y2="300"/>
+  <circle class="bot-antenna-tip" cx="595" cy="285" r="3"/>
+  <rect class="bot-head" x="580" y="300" width="30" height="22" rx="4"/>
+  <circle class="bot-eye e13" cx="590" cy="311" r="3"/>
+  <circle class="bot-eye e13" cx="600" cy="311" r="3"/>
+  <rect class="bot-body" x="575" y="325" width="40" height="30" rx="3"/>
+  <line class="bot-arm" x1="575" y1="330" x2="562" y2="342"/>
+  <line class="bot-arm" x1="615" y1="330" x2="628" y2="342"/>
+  <line class="bot-leg" x1="585" y1="355" x2="580" y2="370"/>
+  <line class="bot-leg" x1="605" y1="355" x2="610" y2="370"/>
+  <text class="bot-label" x="595" y="385">GUARD</text>
+
+  <!-- Footer -->
+  <line class="footer-line" x1="100" y1="405" x2="800" y2="405"/>
+  <text class="footer-label" x="300" y="430">👤 OPERATOR: QASIM</text>
+  <text class="footer-text" x="600" y="430">📡 MISSION: Zero manual intervention.</text>
+
+  <text class="corner" x="22" y="30">FORM://ALPHA</text>
+  <text class="corner" x="800" y="30">UNITS: 13</text>
 </svg>
