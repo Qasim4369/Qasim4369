@@ -127,22 +127,11 @@
 
 ## `> neofetch --github-stats`
 
-<img src="https://github-readme-stats.vercel.app/api?username=Qasim4369&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=00C9FF&ring_color=00FF41" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Qasim4369&theme=dark&hide_border=true&background=0D1117&ring=00FF41&fire=00FF41&currStreakLabel=00C9FF&sideLabels=00FF41&currStreakNum=00C9FF&sideNums=00C9FF&dates=555555" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=Qasim4369&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=00C9FF&ring_color=00FF41" width="55%" />
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Qasim4369&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=00C9FF" width="40%" />
-
-</div>
-
-<br/>
-
-<div align="center">
-
-## `> git log --graph --activity`
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Qasim4369&theme=green&hide_border=true&bg_color=0D1117&color=00FF41&line=00FF41&point=00C9FF&area=true&area_color=00FF4133" width="95%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=Qasim4369&theme=dark&hide_border=true&background=0D1117&ring=00FF41&fire=00FF41&currStreakLabel=00C9FF&sideLabels=00FF41&currStreakNum=00C9FF&sideNums=00C9FF&dates=555555" width="55%" />
 
 </div>
 
