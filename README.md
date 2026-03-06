@@ -6,7 +6,7 @@
 <br/>
 
 <!-- TYPEWRITER BOOT SEQUENCE -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2000&pause=500&color=00FF41&center=true&vCenter=true&multiline=true&repeat=false&width=750&height=120&lines=%3E+SYSTEM+BREACH+DETECTED...;%3E+ACCESSING+OPERATOR+FILE...;%3E+DECRYPTING+CREDENTIALS...." alt="Boot Sequence" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2000&pause=500&color=00FF41&center=true&vCenter=true&multiline=true&repeat=false&width=750&height=120&lines=%3E+SYSTEM+BREACH+DETECTED...;%3E+ACCESSING+OPERATOR+FILE...;%3E+DECRYPTING+CREDENTIALS...;%3E+WELCOME+BACK%2C+QASIM." alt="Boot Sequence" />
 
 <br/>
 
@@ -24,115 +24,38 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<br/>
-
-## `> cat /classified/operator_profile.txt`
-
-```
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                                                                              ║
-║   OPERATOR:        Qasim                                                     ║
-║   DESIGNATION:     Data Scientist / AI Engineer / Automation Architect        ║
-║   EXPERIENCE:      2+ Years — Industry Deployed                              ║
-║   INSTITUTION:     FAST NUCES Islamabad                                      ║
-║                    National University of Computer & Emerging Sciences        ║
-║                    ↳ The Waterloo of Pakistan 🇵🇰                             ║
-║   DEGREE:          Data Science                                              ║
-║   SPECIALIZATION:  Bots • Scrapers • Crawlers • APIs • ML/AI • Automation    ║
-║   STATUS:          Active. Systems nominal. Bots deployed.                   ║
-║                                                                              ║
-║   PHILOSOPHY:      "In a world drowning in data,                             ║
-║                     I build the machines that make sense of it."              ║
-║                                                                              ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-```
-
-<br/>
+<!-- WHOAMI - PYTHON CLASS -->
+<div align="center">
+<img src="./assets/whoami.svg" width="100%" alt="whoami"/>
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<br/>
-
-## `> deploy --list-active-units`
-
+<!-- OPERATOR PROFILE -->
 <div align="center">
-
-```
- ╔═══════════════════════════════════════════════════════════════════════╗
- ║                    🤖 CURRENTLY DEPLOYED UNITS                      ║
- ╠═══════════════════════════════════════════════════════════════════════╣
- ║                                                                     ║
- ║   [BOT-001]  🕷️  WEB CRAWLER         ██████████  ACTIVE   ↑ 99.8%  ║
- ║   [BOT-002]  🔍  DATA SCRAPER        ██████████  ACTIVE   ↑ 99.2%  ║
- ║   [BOT-003]  🧠  ML MODEL v4.2       ████████░░  TRAINING ↑ 82.0%  ║
- ║   [BOT-004]  🔌  API ORCHESTRATOR    ██████████  ACTIVE   ↑ 99.9%  ║
- ║   [BOT-005]  📊  ETL PIPELINE        █████████░  RUNNING  ↑ 94.5%  ║
- ║   [BOT-006]  ⚡  TASK AUTOMATOR      ██████████  ACTIVE   ↑ 98.7%  ║
- ║   [BOT-007]  🛡️  DATA VALIDATOR      █████████░  ACTIVE   ↑ 91.3%  ║
- ║   [BOT-008]  🚀  DEPLOYMENT AGENT    ██████████  STANDBY  ↑ 100%   ║
- ║                                                                     ║
- ║   TOTAL UNITS: 8    |    UPTIME: 99.6%    |    ERRORS: 0            ║
- ║                                                                     ║
- ║   ⚠  "They don't sleep. They don't stop. They work for me."        ║
- ║                                                                     ║
- ╚═══════════════════════════════════════════════════════════════════════╝
-```
-
+<img src="./assets/operator-profile.svg" width="100%" alt="Operator Profile"/>
 </div>
-
-<br/>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<br/>
-
-## `> ./scan --bot-army --formation`
-
+<!-- CURRENTLY DEPLOYED UNITS -->
 <div align="center">
-
-```
-                           ⚡ BOT ARMY — FORMATION ALPHA ⚡
-
-         🤖          🤖          🤖          🤖          🤖
-        /||\\        /||\\        /||\\        /||\\        /||\\
-        / \\         / \\         / \\         / \\         / \\
-       SCOUT       SCRAPER     TRAINER     DEPLOYER    SENTINEL
-       
-         🤖          🤖          🤖          🤖          🤖
-        /||\\        /||\\        /||\\        /||\\        /||\\
-        / \\         / \\         / \\         / \\         / \\
-       CRAWLER     PARSER      FEEDER      SYNCER      WATCHER
-       
-                          🤖    🤖    🤖
-                         /||\\  /||\\  /||\\
-                         / \\   / \\   / \\
-                        API    ETL   GUARD
-                        
-    ════════════════════════════════════════════════════════════
-                    👤 OPERATOR: QASIM
-                    📡 COMMAND: "Automate everything."
-                    🎯 MISSION: Zero manual intervention.
-    ════════════════════════════════════════════════════════════
-```
-
+<img src="./assets/deployed-units.svg" width="100%" alt="Deployed Units"/>
 </div>
-
-<br/>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<br/>
-
-## `> cat /web/spider_network.svg`
-
+<!-- BOT ARMY -->
 <div align="center">
-
-<!-- SPIDER WEB SVG -->
-<img src="./assets/spider-web.svg" width="100%" alt="Spider Web - Everything Connects to Me"/>
-
+<img src="./assets/bot-army.svg" width="100%" alt="Bot Army"/>
 </div>
 
-<br/>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<!-- SPIDER WEB -->
+<div align="center">
+<img src="./assets/spider-web.svg" width="100%" alt="Spider Web"/>
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
@@ -189,53 +112,20 @@
 
 </div>
 
-<br/>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<!-- TRANSFORMATION -->
+<div align="center">
+<img src="./assets/transform.svg" width="100%" alt="Transformation Protocol"/>
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 <br/>
 
-## `> ./transform --target=legacy_business --mode=total_takeover`
-
 <div align="center">
-
-```
-     ┌──────────────────┐                         ┌──────────────────┐
-     │  🏚️  THE OLD WAY  │                         │  🏙️  THE NEW WAY  │
-     │                  │       ╔═══════════╗      │                  │
-     │  Manual labor    │       ║           ║      │  Bot armies      │
-     │  Copy-paste      │──────>║  Q A S I M ║──────>│  Smart APIs      │
-     │  Gut feelings    │       ║  .exe      ║      │  ML decisions    │
-     │  Duct-tape IT    │       ║           ║      │  AI-native ops   │
-     │  Pray it works   │       ╚═══════════╝      │  It just works   │
-     │                  │                          │                  │
-     └──────────────────┘                         └──────────────────┘
-           BEFORE              TRANSFORMATION             AFTER
-```
-
-</div>
-
-<div align="center">
-
-| Phase | Operation | Result |
-|:-----:|:---------:|:------:|
-| `01` | 🕷️ **EXTRACT** — Deploy crawlers & scrapers | Data flows in on autopilot |
-| `02` | 🔌 **CONNECT** — Build APIs & integrations | Isolated systems become one |
-| `03` | 🧠 **THINK** — Train & deploy ML models | Machines make the decisions |
-| `04` | ⚡ **AUTOMATE** — Wire triggers & pipelines | Manual work goes extinct |
-| `05` | 🚀 **SCALE** — Containerize & cloud deploy | Growth without hiring |
-
-</div>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
 
 ## `> neofetch --github-stats`
-
-<div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=Qasim4369&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=00C9FF&ring_color=00FF41" width="48%" />
 <img src="https://github-readme-streak-stats.herokuapp.com?user=Qasim4369&theme=dark&hide_border=true&background=0D1117&ring=00FF41&fire=00FF41&currStreakLabel=00C9FF&sideLabels=00FF41&currStreakNum=00C9FF&sideNums=00C9FF&dates=555555" width="48%" />
@@ -248,9 +138,9 @@
 
 <br/>
 
-## `> git log --graph --activity`
-
 <div align="center">
+
+## `> git log --graph --activity`
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Qasim4369&theme=green&hide_border=true&bg_color=0D1117&color=00FF41&line=00FF41&point=00C9FF&area=true&area_color=00FF4133" width="95%"/>
 
@@ -258,9 +148,9 @@
 
 <br/>
 
-## `> render --contribution-snake`
-
 <div align="center">
+
+## `> render --contribution-snake`
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Qasim4369/Qasim4369/output/github-snake-dark.svg" />
@@ -270,11 +160,7 @@
 
 </div>
 
-<br/>
-
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<br/>
 
 <div align="center">
 
@@ -282,30 +168,15 @@
 
 <br/><br/>
 
-```
-╔══════════════════════════════════════════════════════════════════════════╗
-║                                                                          ║
-║   "The future satisfies to those who build it — with machines."          ║
-║                                                                          ║
-║    While you were doing it manually, my bots already finished.           ║
-║                                                                          ║
-╚══════════════════════════════════════════════════════════════════════════╝
-```
+<!-- FOOTER -->
+<img src="./assets/footer.svg" width="100%" alt="Footer"/>
 
-<br/>
+<br/><br/>
 
 **`> connection.establish()`**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white)](https://YOUR_WEBSITE)
-
-<br/>
-
-```
-> SESSION TERMINATED.
-> BOTS STILL RUNNING.
-> GOODNIGHT, OPERATOR.
-```
 
 </div>
