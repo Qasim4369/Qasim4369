@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+  <defs>
+    <style>
+      @keyframes fall {
+        0% { opacity: 1; transform: translateY(-20px); }
+        100% { opacity: 0; transform: translateY(220px); }
+      }
+      .matrix-char {
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        fill: #00FF41;
+        opacity: 0;
+      }
+      .bg { fill: #0D1117; }
+      .title-text {
+        font-family: 'Courier New', monospace;
+        font-weight: bold;
+        fill: #00FF41;
+        text-anchor: middle;
+      }
+      .title-glow {
+        font-family: 'Courier New', monospace;
+        font-weight: bold;
+        fill: none;
+        stroke: #00FF41;
+        stroke-width: 0.5;
+        text-anchor: middle;
+        opacity: 0.5;
+      }
+      .subtitle {
+        font-family: 'Courier New', monospace;
+        fill: #00C9FF;
+        text-anchor: middle;
+        opacity: 0.8;
+      }
+      .scanline {
+        fill: rgba(0,255,65,0.03);
+        animation: scan 4s linear infinite;
+      }
+      @keyframes scan {
+        0% { y: -10; }
+        100% { y: 200; }
+      }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="200" rx="6"/>
+
+  <!-- Matrix rain columns -->
+  <text class="matrix-char" x="30" y="0" style="animation: fall 2.1s linear 0.1s infinite;">ア</text>
+  <text class="matrix-char" x="60" y="0" style="animation: fall 1.8s linear 0.5s infinite;">0</text>
+  <text class="matrix-char" x="90" y="0" style="animation: fall 2.5s linear 0.2s infinite;">カ</text>
+  <text class="matrix-char" x="120" y="0" style="animation: fall 1.9s linear 0.8s infinite;">1</text>
+  <text class="matrix-char" x="150" y="0" style="animation: fall 2.3s linear 0.3s infinite;">サ</text>
+  <text class="matrix-char" x="180" y="0" style="animation: fall 2.0s linear 1.1s infinite;">タ</text>
+  <text class="matrix-char" x="210" y="0" style="animation: fall 1.7s linear 0.6s infinite;">0</text>
+  <text class="matrix-char" x="240" y="0" style="animation: fall 2.4s linear 0.4s infinite;">ナ</text>
+  <text class="matrix-char" x="270" y="0" style="animation: fall 1.6s linear 0.9s infinite;">1</text>
+  <text class="matrix-char" x="300" y="0" style="animation: fall 2.2s linear 0.7s infinite;">ハ</text>
+  <text class="matrix-char" x="330" y="0" style="animation: fall 1.5s linear 1.3s infinite;">マ</text>
+  <text class="matrix-char" x="360" y="0" style="animation: fall 2.6s linear 0.15s infinite;">0</text>
+  <text class="matrix-char" x="390" y="0" style="animation: fall 1.8s linear 0.85s infinite;">ヤ</text>
+  <text class="matrix-char" x="420" y="0" style="animation: fall 2.1s linear 0.45s infinite;">ラ</text>
+  <text class="matrix-char" x="450" y="0" style="animation: fall 2.0s linear 1.0s infinite;">1</text>
+  <text class="matrix-char" x="480" y="0" style="animation: fall 1.9s linear 0.55s infinite;">ワ</text>
+  <text class="matrix-char" x="510" y="0" style="animation: fall 2.3s linear 0.25s infinite;">0</text>
+  <text class="matrix-char" x="540" y="0" style="animation: fall 1.7s linear 0.75s infinite;">カ</text>
+  <text class="matrix-char" x="570" y="0" style="animation: fall 2.5s linear 1.2s infinite;">1</text>
+  <text class="matrix-char" x="600" y="0" style="animation: fall 1.6s linear 0.35s infinite;">サ</text>
+  <text class="matrix-char" x="630" y="0" style="animation: fall 2.4s linear 0.65s infinite;">タ</text>
+  <text class="matrix-char" x="660" y="0" style="animation: fall 1.8s linear 0.95s infinite;">0</text>
+  <text class="matrix-char" x="690" y="0" style="animation: fall 2.2s linear 0.5s infinite;">ナ</text>
+  <text class="matrix-char" x="720" y="0" style="animation: fall 2.0s linear 1.15s infinite;">ハ</text>
+  <text class="matrix-char" x="750" y="0" style="animation: fall 1.9s linear 0.4s infinite;">1</text>
+  <text class="matrix-char" x="780" y="0" style="animation: fall 2.1s linear 0.7s infinite;">マ</text>
+  <text class="matrix-char" x="810" y="0" style="animation: fall 2.3s linear 0.2s infinite;">0</text>
+  <text class="matrix-char" x="840" y="0" style="animation: fall 1.5s linear 0.9s infinite;">ヤ</text>
+  <text class="matrix-char" x="870" y="0" style="animation: fall 2.6s linear 0.6s infinite;">1</text>
+
+  <!-- Second wave -->
+  <text class="matrix-char" x="45" y="0" style="animation: fall 2.3s linear 1.5s infinite; fill: #00CC33;">ウ</text>
+  <text class="matrix-char" x="75" y="0" style="animation: fall 1.9s linear 1.8s infinite; fill: #00CC33;">1</text>
+  <text class="matrix-char" x="135" y="0" style="animation: fall 2.1s linear 1.6s infinite; fill: #00CC33;">エ</text>
+  <text class="matrix-char" x="195" y="0" style="animation: fall 2.4s linear 1.4s infinite; fill: #00CC33;">0</text>
+  <text class="matrix-char" x="255" y="0" style="animation: fall 1.7s linear 1.9s infinite; fill: #00CC33;">オ</text>
+  <text class="matrix-char" x="345" y="0" style="animation: fall 2.0s linear 1.7s infinite; fill: #00CC33;">1</text>
+  <text class="matrix-char" x="405" y="0" style="animation: fall 2.5s linear 1.3s infinite; fill: #00CC33;">キ</text>
+  <text class="matrix-char" x="465" y="0" style="animation: fall 1.8s linear 2.0s infinite; fill: #00CC33;">ク</text>
+  <text class="matrix-char" x="555" y="0" style="animation: fall 2.2s linear 1.5s infinite; fill: #00CC33;">0</text>
+  <text class="matrix-char" x="645" y="0" style="animation: fall 1.6s linear 1.8s infinite; fill: #00CC33;">ケ</text>
+  <text class="matrix-char" x="705" y="0" style="animation: fall 2.3s linear 1.4s infinite; fill: #00CC33;">1</text>
+  <text class="matrix-char" x="795" y="0" style="animation: fall 2.0s linear 1.6s infinite; fill: #00CC33;">コ</text>
+  <text class="matrix-char" x="855" y="0" style="animation: fall 1.9s linear 2.1s infinite; fill: #00CC33;">0</text>
+
+  <!-- Scanline effect -->
+  <rect class="scanline" x="0" y="-10" width="900" height="4"/>
+
+  <!-- Center title -->
+  <text class="title-glow" x="450" y="85" font-size="36">Q A S I M _ 4 3 6 9</text>
+  <text class="title-text" x="450" y="85" font-size="36">Q A S I M _ 4 3 6 9</text>
+  <text class="subtitle" x="450" y="115" font-size="16">[ SYSTEM OPERATOR • DATA SCIENTIST • AI ENGINEER ]</text>
+  <text class="subtitle" x="450" y="140" font-size="12" opacity="0.5">⚠ AUTHORIZED ACCESS ONLY ⚠</text>
+
+  <!-- Corner decorations -->
+  <text font-family="Courier New" fill="#00FF41" font-size="10" x="10" y="15" opacity="0.4">SYS.INIT</text>
+  <text font-family="Courier New" fill="#00FF41" font-size="10" x="820" y="15" opacity="0.4">v4.3.69</text>
+  <text font-family="Courier New" fill="#00FF41" font-size="10" x="10" y="193" opacity="0.4">SEC://CLEARANCE_ALPHA</text>
+  <text font-family="Courier New" fill="#00FF41" font-size="10" x="790" y="193" opacity="0.4">BOTS.ONLINE</text>
+</svg>
