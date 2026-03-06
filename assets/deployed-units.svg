@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <defs>
+    <style>
+      @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+      @keyframes bar-pulse { 0%,100% { opacity: 0.9; } 50% { opacity: 0.6; } }
+      @keyframes scanline { 0% { transform: translateY(-10px); } 100% { transform: translateY(420px); } }
+      .bg { fill: #0D1117; }
+      .border { fill: none; stroke: #00FF41; stroke-width: 2; opacity: 0.8; }
+      .header { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .bot-id { fill: #555555; font-family: 'Courier New', monospace; font-size: 12px; }
+      .bot-icon { font-family: 'Courier New', monospace; font-size: 16px; }
+      .bot-name { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 13px; font-weight: bold; }
+      .bar-bg { fill: #1a1a2e; rx: 2; }
+      .bar-fill-active { fill: #00FF41; rx: 2; animation: bar-pulse 3s ease-in-out infinite; }
+      .bar-fill-training { fill: #FFD700; rx: 2; animation: bar-pulse 2s ease-in-out infinite; }
+      .bar-fill-standby { fill: #00C9FF; rx: 2; }
+      .status-active { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; }
+      .status-training { fill: #FFD700; font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; }
+      .status-standby { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; }
+      .pct { fill: #AAAAAA; font-family: 'Courier New', monospace; font-size: 11px; }
+      .dot-active { fill: #00FF41; animation: blink 1.5s ease-in-out infinite; }
+      .dot-training { fill: #FFD700; animation: blink 1s ease-in-out infinite; }
+      .dot-standby { fill: #00C9FF; }
+      .footer { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 12px; text-anchor: middle; }
+      .footer-quote { fill: #00C9FF; font-family: 'Courier New', monospace; font-size: 13px; text-anchor: middle; font-style: italic; }
+      .divider { stroke: #00FF41; stroke-width: 0.5; opacity: 0.3; }
+      .corner { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 9px; opacity: 0.3; }
+      .scan { fill: rgba(0,255,65,0.03); animation: scanline 5s linear infinite; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="420" rx="6"/>
+  <rect class="border" x="15" y="15" width="870" height="390" rx="4"/>
+
+  <!-- Scanline -->
+  <rect class="scan" x="15" y="-10" width="870" height="3"/>
+
+  <!-- Header -->
+  <text class="header" x="450" y="48">🤖 CURRENTLY DEPLOYED UNITS</text>
+  <line class="divider" x1="100" y1="58" x2="800" y2="58"/>
+
+  <!-- Column Headers -->
+  <text class="bot-id" x="50" y="80" style="fill:#666;">UNIT</text>
+  <text class="bot-id" x="160" y="80" style="fill:#666;">TYPE</text>
+  <text class="bot-id" x="420" y="80" style="fill:#666;">HEALTH</text>
+  <text class="bot-id" x="680" y="80" style="fill:#666;">STATUS</text>
+  <text class="bot-id" x="790" y="80" style="fill:#666;">UPTIME</text>
+  <line class="divider" x1="40" y1="88" x2="860" y2="88"/>
+
+  <!-- BOT-001 -->
+  <text class="bot-id" x="50" y="115">[BOT-001]</text>
+  <text class="bot-icon" x="140" y="116">🕷️</text>
+  <text class="bot-name" x="165" y="115">WEB CRAWLER</text>
+  <rect class="bar-bg" x="420" y="103" width="220" height="14"/>
+  <rect class="bar-fill-active" x="420" y="103" width="219" height="14"/>
+  <circle class="dot-active" cx="665" cy="110" r="4"/>
+  <text class="status-active" x="680" y="115">ACTIVE</text>
+  <text class="pct" x="790" y="115">↑ 99.8%</text>
+
+  <!-- BOT-002 -->
+  <text class="bot-id" x="50" y="148">[BOT-002]</text>
+  <text class="bot-icon" x="140" y="149">🔍</text>
+  <text class="bot-name" x="165" y="148">DATA SCRAPER</text>
+  <rect class="bar-bg" x="420" y="136" width="220" height="14"/>
+  <rect class="bar-fill-active" x="420" y="136" width="218" height="14"/>
+  <circle class="dot-active" cx="665" cy="143" r="4"/>
+  <text class="status-active" x="680" y="148">ACTIVE</text>
+  <text class="pct" x="790" y="148">↑ 99.2%</text>
+
+  <!-- BOT-003 -->
+  <text class="bot-id" x="50" y="181">[BOT-003]</text>
+  <text class="bot-icon" x="140" y="182">🧠</text>
+  <text class="bot-name" x="165" y="181">ML MODEL v4.2</text>
+  <rect class="bar-bg" x="420" y="169" width="220" height="14"/>
+  <rect class="bar-fill-training" x="420" y="169" width="180" height="14"/>
+  <circle class="dot-training" cx="665" cy="176" r="4"/>
+  <text class="status-training" x="680" y="181">TRAINING</text>
+  <text class="pct" x="790" y="181">↑ 82.0%</text>
+
+  <!-- BOT-004 -->
+  <text class="bot-id" x="50" y="214">[BOT-004]</text>
+  <text class="bot-icon" x="140" y="215">🔌</text>
+  <text class="bot-name" x="165" y="214">API ORCHESTRATOR</text>
+  <rect class="bar-bg" x="420" y="202" width="220" height="14"/>
+  <rect class="bar-fill-active" x="420" y="202" width="220" height="14"/>
+  <circle class="dot-active" cx="665" cy="209" r="4"/>
+  <text class="status-active" x="680" y="214">ACTIVE</text>
+  <text class="pct" x="790" y="214">↑ 99.9%</text>
+
+  <!-- BOT-005 -->
+  <text class="bot-id" x="50" y="247">[BOT-005]</text>
+  <text class="bot-icon" x="140" y="248">📊</text>
+  <text class="bot-name" x="165" y="247">ETL PIPELINE</text>
+  <rect class="bar-bg" x="420" y="235" width="220" height="14"/>
+  <rect class="bar-fill-active" x="420" y="235" width="208" height="14"/>
+  <circle class="dot-active" cx="665" cy="242" r="4"/>
+  <text class="status-active" x="680" y="247">RUNNING</text>
+  <text class="pct" x="790" y="247">↑ 94.5%</text>
+
+  <!-- BOT-006 -->
+  <text class="bot-id" x="50" y="280">[BOT-006]</text>
+  <text class="bot-icon" x="140" y="281">⚡</text>
+  <text class="bot-name" x="165" y="280">TASK AUTOMATOR</text>
+  <rect class="bar-bg" x="420" y="268" width="220" height="14"/>
+  <rect class="bar-fill-active" x="420" y="268" width="217" height="14"/>
+  <circle class="dot-active" cx="665" cy="275" r="4"/>
+  <text class="status-active" x="680" y="280">ACTIVE</text>
+  <text class="pct" x="790" y="280">↑ 98.7%</text>
+
+  <!-- BOT-007 -->
+  <text class="bot-id" x="50" y="313">[BOT-007]</text>
+  <text class="bot-icon" x="140" y="314">🛡️</text>
+  <text class="bot-name" x="165" y="313">DATA VALIDATOR</text>
+  <rect class="bar-bg" x="420" y="301" width="220" height="14"/>
+  <rect class="bar-fill-active" x="420" y="301" width="201" height="14"/>
+  <circle class="dot-active" cx="665" cy="308" r="4"/>
+  <text class="status-active" x="680" y="313">ACTIVE</text>
+  <text class="pct" x="790" y="313">↑ 91.3%</text>
+
+  <!-- BOT-008 -->
+  <text class="bot-id" x="50" y="346">[BOT-008]</text>
+  <text class="bot-icon" x="140" y="347">🚀</text>
+  <text class="bot-name" x="165" y="346">DEPLOYMENT AGENT</text>
+  <rect class="bar-bg" x="420" y="334" width="220" height="14"/>
+  <rect class="bar-fill-standby" x="420" y="334" width="220" height="14"/>
+  <circle class="dot-standby" cx="665" cy="341" r="4"/>
+  <text class="status-standby" x="680" y="346">STANDBY</text>
+  <text class="pct" x="790" y="346">↑ 100%</text>
+
+  <!-- Footer -->
+  <line class="divider" x1="40" y1="362" x2="860" y2="362"/>
+  <text class="footer" x="450" y="382">TOTAL UNITS: 8    |    UPTIME: 99.6%    |    ERRORS: 0</text>
+  <text class="footer-quote" x="450" y="400">⚠ "They don't sleep. They don't stop. They work for me."</text>
+
+  <!-- Corners -->
+  <text class="corner" x="22" y="30">MON://LIVE</text>
+  <text class="corner" x="815" y="30">PING: 12ms</text>
+</svg>
